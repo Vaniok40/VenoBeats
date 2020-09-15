@@ -1,0 +1,505 @@
+textarea {
+  resize: none;
+}
+
+@font-face {
+  font-family: gilroy;
+  src: url(../fonts/Gilroy-FREE/Gilroy-Light.otf);
+  font-family: Gilroy-bold;
+  src: url(../fonts/Gilroy-FREE/Gilroy-ExtraBold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  display: inline;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #414066;
+  height: 75px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 2px solid #3a3961;
+  -webkit-box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.logo {
+  margin-left: 25px;
+  font-size: 36px;
+  align-self: center;
+  font-family: "Gilroy", sans-serif;
+  border: 3px solid #ceff1a;
+  width: 180px;
+  padding: 5.5px;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.logo > a {
+  color: #ceff1a;
+}
+
+nav > div > ul > li {
+  display: inline;
+  margin-right: 15px;
+  font-size: 18px;
+  font-family: "Gilroy", sans-serif;
+  position: relative;
+}
+
+nav > div > ul > li > a {
+  text-align: center;
+  color: #ceff1a;
+  padding: 5px;
+}
+
+nav > div > ul > li > a:hover {
+  background-color: #ceff1a;
+  color: #414066;
+  transition: 0.5s;
+}
+
+nav > div:nth-child(2) > div {
+  display: inline;
+  margin-right: 15px;
+  font-family: "Gilroy", sans-serif;
+  background-color: #1b2d2a;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+nav > div:nth-child(2) > div > a {
+  color: #ceff1a;
+}
+
+nav > div:nth-child(2) > div:hover {
+  cursor: pointer;
+  background-color: rgba(27, 45, 42, 0.4);
+  transition: 0.6s;
+}
+
+nav > div:nth-child(2) {
+  justify-self: end;
+  align-self: center;
+  color: #ceff1a;
+  font-size: 18px;
+}
+
+.burger {
+  display: none;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 170px;
+  padding-bottom: 100px;
+  height: auto;
+}
+
+.contacts > div:first-child {
+  justify-self: center;
+  position: relative;
+}
+
+.contacts > div:last-child {
+  justify-self: center;
+  align-self: center;
+}
+
+.contact-name {
+  width: 265px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #414066;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  color: #414066;
+  padding-left: 15px;
+}
+
+.contact-mail {
+  width: 265px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #414066;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  color: #414066;
+  margin-left: 50px;
+  padding-left: 15px;
+}
+
+.contact-subject {
+  width: 601px;
+  height: 40px;
+  margin-top: 50px;
+  background: #ffffff;
+  border: 1px solid #414066;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  color: #414066;
+  padding-left: 15px;
+}
+
+.contact-text {
+  width: 601px;
+  height: 250px;
+  background: #ffffff;
+  border: 1px solid #414066;
+  padding: 20px 0 0 15px;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  color: #414066;
+  margin-top: 50px;
+}
+
+.contact-button {
+  background: #33325a;
+  width: 300px;
+  height: 50px;
+  border: none;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  color: #ceff1a;
+  margin-top: 50px;
+  display: block;
+}
+
+.contacts > div:last-child > button {
+  width: 500px;
+  height: 60px;
+  background: #33325a;
+  border: none;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  margin-bottom: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contacts > div:last-child > button > a {
+  color: #ceff1a;
+}
+
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-color: black;
+  margin-right: 15px;
+  border-radius: 100%;
+  position: relative;
+}
+
+.contact-icon > i {
+  font-size: 24px;
+  color: #ceff1a;
+  position: relative;
+  top: 7px;
+}
+
+footer {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #414066;
+  height: auto;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: center;
+  align-content: center;
+}
+
+footer > div {
+  justify-self: center;
+  align-self: center;
+}
+
+.footer-item1 > a {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  color: #ceff1a;
+}
+
+.footer-item2 {
+  margin-left: 200px;
+}
+
+.footer-item2 > a {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  color: #ceff1a;
+}
+
+.footer-item3 > a {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  color: #ceff1a;
+}
+
+.footer-item4 {
+  margin-left: 170px;
+}
+
+.footer-item4 > a {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  color: #ceff1a;
+}
+
+.footer-item5 > a {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  color: #ceff1a;
+}
+
+.footer-icons {
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  display: inline-block;
+  margin-right: 50px;
+  border-radius: 100%;
+}
+
+.footer-icons > a {
+  color: #ceff1a;
+  font-size: 50px;
+}
+
+footer .footer-icons:first-child > a {
+  position: relative;
+  left: 8px;
+  top: 12px;
+}
+
+footer .footer-icons:nth-child(2) > a {
+  position: relative;
+  left: 12px;
+  top: 13px;
+}
+
+footer .footer-icons:last-child > a {
+  position: relative;
+  left: 17px;
+  top: 14px;
+}
+
+/*footer*/
+@media screen and (max-width: 1124px) {
+  .burger {
+    display: block;
+    margin-right: 25px;
+    font-size: 36px;
+  }
+
+  nav > div:nth-child(2) > ul {
+    display: none;
+  }
+
+  nav > div:nth-child(2) > div {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .contacts {
+    grid-column-gap: 100px;
+  }
+
+  .contacts > div:first-child {
+    justify-self: end;
+  }
+
+  .contacts > div:last-child {
+    justify-self: start;
+  }
+
+  .contacts > div:last-child > button {
+    width: 400px;
+  }
+
+  .contact-name {
+    width: 165px;
+  }
+
+  .contact-mail {
+    width: 165px;
+  }
+
+  .contact-subject {
+    width: 401px;
+  }
+
+  .contact-text {
+    width: 401px;
+    height: 150px;
+  }
+
+  .footer-icons {
+    margin-right: 0;
+  }
+
+  footer .footer-icons:nth-child(2) {
+    margin: 0 25px;
+  }
+
+  .footer-item2 {
+    margin-left: 100px;
+  }
+
+  .footer-item4 {
+    margin-left: 70px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contacts {
+    grid-template-columns: 1fr;
+    grid-row-gap: 100px;
+    padding-bottom: 0;
+    padding-top: 140px;
+  }
+
+  .contacts > div:first-child {
+    justify-self: center;
+  }
+
+  .contacts > div:last-child {
+    justify-self: center;
+  }
+
+  .contact-button {
+    position: relative;
+    left: calc(50% - 300px / 2);
+  }
+
+  .contact-name {
+    font-size: 14px;
+  }
+
+  .contact-mail {
+    font-size: 14px;
+  }
+
+  .contact-subject {
+    font-size: 14px;
+  }
+
+  .contact-text {
+    font-size: 14px;
+  }
+
+  .contacts > div:last-child > button {
+    font-size: 18px;
+  }
+
+  .contact-icon {
+    margin-right: 5px;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+    padding-top: 30;
+    padding-bottom: 30;
+  }
+
+  footer > .logo {
+    margin-left: 0;
+  }
+
+  .footer-item1 > a {
+    font-size: 22px;
+  }
+
+  .footer-item4 {
+    margin-left: 52px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contact-name {
+    position: relative;
+    width: 270px;
+    left: calc(50% - 285px / 2);
+  }
+
+  .contact-mail {
+    display: block;
+    position: relative;
+    margin-left: 0;
+    top: 50px;
+    width: 270px;
+    left: calc(50% - 285px / 2);
+  }
+
+  .contact-subject {
+    position: relative;
+    top: 50px;
+    width: 270px;
+    left: calc(50% - 285px / 2);
+  }
+
+  .contact-text {
+    position: relative;
+    top: 50px;
+    width: 270px;
+    left: calc(50% - 285px / 2);
+  }
+
+  .contact-button {
+    top: 50px;
+  }
+
+  .contacts {
+    grid-row-gap: 150px;
+  }
+
+  .contacts > div:last-child > button {
+    width: 300px;
+  }
+}

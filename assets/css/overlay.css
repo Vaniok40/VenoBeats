@@ -1,0 +1,25 @@
+body {
+  margin: 0 auto;
+}
+
+.text {
+  font-size: 14px;
+  font-family: "Gilroy", sans-serif;
+  margin: 0 auto;
+  color: #414066;
+  padding: 15px;
+  text-align: justify;
+}
+
+.head {
+  background-color: #414066;
+  height: 70px;
+  width: 1000px;
+  color: #ceff1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-family: "Gilroy", sans-serif;
+  position: relative;
+}
